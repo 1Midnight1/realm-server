@@ -1,0 +1,11 @@
+services:
+  realm-pb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - pb:/pb/pb_data
+volumes:
+  pb:
